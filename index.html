@@ -33,6 +33,21 @@
 	</header>
 	<!-- End menu -->
 
+	<!-- Side navigation menu for mobile view-->
+	<div class="toggle-button-menu">
+		<button class="toggle-button">
+		  <span class="line"></span>
+		  <span class="line"></span>
+		  <span class="line"></span>
+		</button>
+		<ul class="menu-items">
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#experience">Experience</a></li>
+		  <li><a href="#projects">Projects</a></li>
+		  <li><a href="#education">Education</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		</ul>
+	  </div>	  
 	<!-- Social Icon -->
 	<div class="social-buttons" orientation="left">
 		<ul>
@@ -169,7 +184,7 @@
 
 		<!-- Start #education -->
 		<div id="education" class="section">
-			<h2 class="heading" style="margin-left:120px;">Education</h2>
+			<h2 class="heading">Education</h2>
 			<div class="education-block">
 				<h3>Vivekananda Institute Of Professional Studies </h3>
 				<span class="education-date">April 2019 - July 2021</span>
@@ -243,6 +258,19 @@
 					tab0.style.color='white';
 					tab1.style.color='white';
 				})
+			</script>
+			<script>
+				const toggleBtn = document.querySelector('.toggle-button');
+				const menuItems = document.querySelector('.menu-items');
+
+				toggleBtn.addEventListener('click', function() {
+				if (menuItems.style.display === 'block') {
+					menuItems.style.display = 'none';
+				} else {
+					menuItems.style.display = 'block';
+				}
+				});
+
 			</script>
 </body>
 

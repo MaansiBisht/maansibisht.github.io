@@ -213,13 +213,18 @@ svg :hover{
   margin-left: 180px;
   background-color: aqua;
 }
+
+#about p{
+  width:600px;
+}
+
 .main {
   margin:5% 8%; 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   min-height: 50%;
-  height: 50%;
+  height: 70%;
   padding-top: 12%;
   padding-left: 5%; 
   font-family: var(--font-sans);
@@ -255,7 +260,7 @@ svg :hover{
   text-align: left;
   color: gray;
   font-family:var(--font-mono);
-  margin-top: 100px;
+  margin-top: 300px;
 }
 .section .heading {
   font-size: var(--fz-heading);
@@ -366,6 +371,10 @@ svg :hover{
 	text-align: left;
   font-family: var(--font-sans);
 }
+#education 	.heading{
+  margin-left:12%
+ }
+ 
 #education .heading::after{
   content: "";
   display: block;
@@ -398,6 +407,7 @@ svg :hover{
   margin-bottom: 200px;
 	visibility: visible;
   opacity: 1;
+  text-align: center;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
@@ -459,6 +469,9 @@ footer{
   margin-top: 100px;
 }
 
+.toggle-button-menu {
+  display: none;
+}
 .icons {
   position: fixed;
   display: flex;
@@ -466,7 +479,7 @@ footer{
   list-style: none;
   width:150px;
   color: yellow;
-  margin-left: 470px;
+  margin-left: 32%;
 }
 .icons a {
   text-decoration: none;
@@ -484,46 +497,7 @@ footer{
     left: 40%;
     top: auto;
     font-size: x-small;
-  }
-  .navMenu a {
-    width: 100%;
-    padding: 8px 0;
-    text-align: center;
-  }
-  .navMenu a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(15px);
-    transform: translateX(15px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(60px);
-    transform: translateX(60px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(120px);
-    transform: translateX(120px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(175px);
-    transform: translateX(175px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(5):hover ~ .dot {
-    -webkit-transform: translateX(230px);
-    transform: translateX(230px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
+    display: none;
   }
 
   /* main heading */
@@ -570,7 +544,8 @@ footer{
     text-align: left;
     color: gray;
     font-family:var(--font-mono);
-    font-size: x-small;
+    margin-top: 100px;
+    font-size: small;
   }
   .section .heading {
     font-size: medium;
@@ -587,6 +562,10 @@ footer{
     background-color: aqua;
   }
 
+  #about p{
+    width:auto;
+  }
+
   #experience-timeline p:nth-child(1)::before{
     content: "";
     display: block;
@@ -597,10 +576,10 @@ footer{
   }
   #experience .heading::after{
     content: "";
-    display: block;
+    display: none;
     position: relative;
     top: -12px;
-    width: 150px;
+    width:100px;
     height: 1px;
     margin-left: 180px;
     background-color: aqua;
@@ -616,6 +595,7 @@ footer{
   #experience ul{
     list-style-type: none;
     margin-top:20px;
+    width: auto;
   }
   #experience li{
     margin-top:10px;
@@ -627,7 +607,14 @@ footer{
     line-height: 2%;
     margin-right: 2%;
   }
-
+  .tabular-view{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .jobs-panel{
+    margin-left: 10px;
+  }
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -651,8 +638,15 @@ footer{
     font-family: var(--font-mono);
     outline: none;
   }
-  
-
+  .icons {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width:auto;
+    color: yellow;
+    margin-left: 0%;
+  }
 /* Additional demo display styles for carsoul */
 #projects h2 {
   text-align: center;
@@ -691,7 +685,6 @@ footer{
 	margin: 0 auto 30px auto;
 	padding: 15px;
 	border: 1px solid #dcd9d9;
-	text-align: left;
   font-family: var(--font-sans);
 }
 #education .heading::after{
@@ -699,11 +692,15 @@ footer{
   display: none;
   position: relative;
   top: -18px;
-  width: 63%;
+  width: 100%;
   height: 1px;
   margin-left: 180px;
   background-color: aqua;
 }
+#education 	.heading{
+  margin-left:0%;
+  text-align: center;
+ }
 .education-block h3 {
 	font-weight: 500;
 	float: left;
@@ -717,4 +714,49 @@ footer{
 	clear: both;
 	font-weight: 500;
 	}
+
+  /*  side toggle menu for mobile view*/
+.toggle-button-menu {
+  display:contents;
+}
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18px;
+  width: 22px;
+  float: right;
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: #ebe5e5;
+}
+
+.menu-items {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #031342;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.menu-items li {
+  padding: 8px; 
+  margin: 5px 5px 0 0;
+}
+.menu-items li a {
+  color: white;
+  text-decoration: none;
+}
 }
