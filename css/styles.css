@@ -473,6 +473,10 @@ footer{
   display: none;
 }
 .icons {
+  display: none;
+}
+/* .icons {
+  display: none;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -487,7 +491,7 @@ footer{
   width: 10px;
   height: 60px;
   margin: 2px 0;
-}
+} */
 
 /* Media query for screens smaller than 768px */
 @media only screen and (max-width: 767px) {
