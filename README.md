@@ -1,3 +1,3 @@
 # personal-portfolio
 personal portfolio website
-[https://maansibisht.github.io/]
+[https://deft-gelato-880b3b.netlify.app/]
